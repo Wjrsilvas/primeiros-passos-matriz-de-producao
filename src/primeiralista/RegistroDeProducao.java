@@ -24,6 +24,6 @@ public class RegistroDeProducao {
 		produtos[3] = "Teste4";
 		produtos[4] = "Teste5";
 		
-		System.out.println(produtos[0]);
+
 	}
 	}

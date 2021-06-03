@@ -3,7 +3,8 @@ package primeiralista;
 public class Fabrica {
 
 	public void produzir() {
-		int = RegistroDeProducao
+		RegistroDeProducao  c = new RegistroDeProducao();
+		
 		
 	}
 	

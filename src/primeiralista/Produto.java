@@ -1,9 +1,9 @@
 package primeiralista;
 
 public class Produto {
-	private int id ;
-	private String descricao;
-	private Float custoDeProducao;
+	public int id ;
+	public String descricao;
+	public Float custoDeProducao;
  
 	
 }
