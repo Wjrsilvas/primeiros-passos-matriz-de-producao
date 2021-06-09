@@ -13,14 +13,32 @@
 
 package primeiralista;
 
-
 public class ExecutarLinhaDeProducao {
-	public void executarLinha(int executarlinha) {
-		
+
+	public void executarLinha(int teste) {
+
 		Fabrica fabrica = new Fabrica();
 
-		System.out.println("teste");
+		Produto produtoCriado = fabrica.produzir(teste);
+
+		System.out.println(">>> Produto Criado <<<\n");
+		System.out.println(" Nome :" + produtoCriado.descricao);
+		System.out.println(" ID :" + produtoCriado.id);
+		System.out.println(" ID :" + produtoCriado.descricao + "\n");
+		System.out.println("--");
+
 	}
 
+	public void executarLinha01() {
+		executarLinha(0);
+	}
+	
+	public void executarLinha02() {
+		executarLinha(4);
+	}
 
+	public static void main(String[] args) {
+		new ExecutarLinhaDeProducao().executarLinha(4); /* O valor digitado dentro de exceturar linha faz a busca nas outras classes */
+		new ExecutarLinhaDeProducao().executarLinha(2);
+	}
 }
